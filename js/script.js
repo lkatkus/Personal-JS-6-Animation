@@ -2,9 +2,11 @@
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 
+ctx.webkitImageSmoothingEnabled = false;
+ctx.mozImageSmoothingEnabled = false;
+ctx.imageSmoothingEnabled = false; /// future
+
 // CANVAS SIZE
-canvas.width = 100;
-canvas.height = 100;
 
 // GETTING SPRITE SHEET
 var coinImage = new Image();
@@ -35,8 +37,8 @@ function animationUpdate(){
     }else{
         frameIndex = 0;
     }
-    ctx.clearRect(0, 0, 44, 44);
-    ctx.drawImage(coinImage,sheetX,0,44,44,0,0,44,44);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(coinImage,sheetX,0,44,44,0,0,canvas.width, canvas.height);
 
 }
 
