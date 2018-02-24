@@ -54,8 +54,8 @@ var canvasHeight = 350;
 canvas.width = canvasWidth;
 canvas.height = canvasHeight;
 
-var spriteWidth = 864;
-var spriteHeight = 280;
+var spriteWidth = 1016;
+var spriteHeight = 500;
 
 var rows = 2;
 var cols = 8;
@@ -81,7 +81,7 @@ var right = true;
 var speed = 12;
 
 var char = new Image();
-char.src = "img/character.png";
+char.src = "img/player-sprite-v1-20180224.png";
 
 function updateFrame(){
     //Updating the frame index
@@ -136,7 +136,7 @@ function animate () {
         function(){
             myAnimationRequest = requestAnimationFrame(animate);
         },
-        1000/20); /* LOWER INTERVAL = FASTER GAME */
+        1000/10); /* LOWER INTERVAL = FASTER GAME */
 
     draw();
 }
