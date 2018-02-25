@@ -54,7 +54,7 @@ var canvasHeight = 350;
 canvas.width = canvasWidth;
 canvas.height = canvasHeight;
 
-var spriteWidth = 1016;
+var spriteWidth = 1000;
 var spriteHeight = 500;
 
 var rows = 2;
