@@ -54,11 +54,11 @@ var canvasHeight = 350;
 canvas.width = canvasWidth;
 canvas.height = canvasHeight;
 
-var spriteWidth = 1000;
-var spriteHeight = 500;
+var spriteWidth = 900;
+var spriteHeight = 400;
 
 var rows = 2;
-var cols = 8;
+var cols = 9;
 
 var trackRight = 0; /* FOR MOVING RIGHT ANIMATION */
 var trackLeft = 1; /* FOR MOVING LEFT ANIMATION */
@@ -81,7 +81,7 @@ var right = true;
 var speed = 12;
 
 var char = new Image();
-char.src = "img/player-sprite-v1-20180224.png";
+char.src = "img/player-sprite-v2-2018 03 06.png";
 
 function updateFrame(){
     //Updating the frame index
